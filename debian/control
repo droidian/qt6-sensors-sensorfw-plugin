@@ -1,0 +1,19 @@
+Source: qt6-sensors-sensorfw-plugin
+Section: libs
+Maintainer: Erik Inkinen <erik.inkinen@erikinkinen.fi>
+Priority: optional
+Build-Depends: pkg-kde-tools,
+               qt6-base-dev (>= 6.4.2-1+git~),
+               qt6-base-private-dev (>= 6.4.2-1+git~),
+               qt6-sensors-dev (>= 6.4.2-1+git~),
+               libsensorfw-qt6-dev,
+               pkg-config,,
+               cmake
+Standards-Version: 4.5.1
+
+Package: qt6-sensors-sensorfw-plugin
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This package contains a Qt 6 sensor plugin using sensorfw.
